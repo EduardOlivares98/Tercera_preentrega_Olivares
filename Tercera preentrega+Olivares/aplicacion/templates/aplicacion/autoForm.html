@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Pieza</title>
+</head>
+<body>
+    <h2>Agregar nueva pieza</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Pieza: <input type="text" name="nombre" id="nombre"></p>
+        <p>Numero: <input type="number" name="numero" id="numero"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
